@@ -65,12 +65,12 @@ body {
 
 #letter-title {
     position: relative;
-    top: -37px; /* moves it 50px downward */
+    top: -36px; /* moves it 50px downward */
     text-align: center;
 }
 #letter-cat {
     position: relative;
-    top: -88px; /* moves cat down 20px */
+    top: -85px; /* moves cat down 20px */
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -164,7 +164,7 @@ display: inline-block;
 
 #letter-cat.dance {
   position: relative; /* needed to move with 'top' */
-  top: 15px;          /* moves dancing cat downgytu6rfuytfitfirfurdfiytfiytfutrdurfiytfiytfirfdyfyfrtyrfjytrfytytf */
+  top: 11px;          /* moves dancing cat downgytu6rfuytfitfirfurdfiytfiytfutrdurfiytfiytfirfdyfyfrtyrfjytrfytytf */
   animation: danceMove 0.7s infinite;
 }
 
@@ -196,6 +196,6 @@ display: inline-block;
     background-color: rgba(255,240,240,0.5);
     border-radius: 12px;
 
-    margin-top: 75px; /* pulls it up */
+    margin-top: 73px; /* pulls it up */
 }
 
