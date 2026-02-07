@@ -163,7 +163,7 @@ display: inline-block;
 
 #letter-title.yippee {
     position: relative;        /* needed to use top */
-    top: 8px;                 /* moves text down */
+    top: 4px;                 /* moves text down */
     font-size: 2rem;
     animation: popBounce 0.6s infinite alternate; /* keep bounce */
 }
