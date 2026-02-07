@@ -72,5 +72,5 @@ yesBtn.addEventListener("click", () => {
     document.querySelector(".letter-window").classList.add("final");
 
     buttons.style.display = "none";
-    finalText.style.display = "block";
+    finalText.style.display = "block"; // show the final text
 });
