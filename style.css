@@ -65,12 +65,12 @@ body {
 
 #letter-title {
     position: relative;
-    top: 60px; /* moves it 50px downward */
+    top: -70px; /* moves it 50px downward */
     text-align: center;
 }
 #letter-cat {
     position: relative;
-    top: 20px; /* moves cat down 20px */
+    top: -70px; /* moves cat down 20px */
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -108,7 +108,7 @@ p {
     justify-content: center;
     gap: 30px;
     position: relative;
-    top: -20px;
+    top: -110px;
 }
 
 .no-wrapper{
