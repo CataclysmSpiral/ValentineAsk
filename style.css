@@ -142,9 +142,12 @@ display: inline-block;
     cursor: default;
 }
 /*for yippeee!*/
+/*for yippeee!*/
 .yippee {
+  position: relative;       /* needed to move it */
+  top: -70px;                /* moves it down 20px */
   font-size: 2rem;
-  animation: popBounce 0.6s infinite alternate;
+  animation: popBounce 0.6s infinite alternate;  /* keeps the bounce effect */
 }
 
 @keyframes popBounce {
@@ -157,11 +160,10 @@ display: inline-block;
 }
 #letter-title.yippee {
     position: relative;        /* needed to use top */
-    top: 0px;                 /* moves text down */
+    top: 4px;                 /* moves text down */
     font-size: 2rem;
     animation: popBounce 0.6s infinite alternate; /* keep bounce */
 }
-
 
 /*cat dance*/
 .dance {
