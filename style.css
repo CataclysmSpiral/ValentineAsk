@@ -143,9 +143,22 @@ display: inline-block;
 }
 /*for yippeee!*/
 /*for yippeee!*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*for yippeee!*/
 .yippee {
   position: relative;       /* needed to move it */
-  top: -70px;                /* moves it down 20px */
+  top: -90px;                /* moves it down 20px */
   font-size: 2rem;
   animation: popBounce 0.6s infinite alternate;  /* keeps the bounce effect */
 }
@@ -160,15 +173,27 @@ display: inline-block;
 }
 #letter-title.yippee {
     position: relative;        /* needed to use top */
-    top: 4px;                 /* moves text down */
+    top: -10px;                 /* moves text down */
     font-size: 2rem;
     animation: popBounce 0.6s infinite alternate; /* keep bounce */
 }
+
 /* Bounce animation */
 @keyframes popBounce {
     0% { transform: scale(1); }
     100% { transform: scale(1.6); }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 /*cat dance*/
 .dance {
