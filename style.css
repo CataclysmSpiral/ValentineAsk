@@ -63,6 +63,19 @@ body {
     transition: transform 0.6s ease, opacity 0.6s ease;
 }
 
+#letter-title {
+    position: relative;
+    top: 50px; /* moves it 50px downward */
+    text-align: center;
+}
+#letter-cat {
+    position: relative;
+    top: 40px; /* moves cat down 20px */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .letter-window.open {
     transform: scale(1);
     opacity: 1;
@@ -127,8 +140,45 @@ display: inline-block;
     transition: transform 0.15s ease;
     cursor: default;
 }
+/*for yippeee!*/
+.yippee {
+  font-size: 2rem;
+  animation: popBounce 0.6s infinite alternate;
+}
 
-.final-text{
+@keyframes popBounce {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.6);
+  }
+}
+
+/*cat dance*/
+.dance {
+  animation: danceMove 0.7s infinite;
+}
+
+@keyframes danceMove {
+  0% {
+    transform: scale(1) translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: scale(1.2) translateY(-5px) rotate(-5deg);
+  }
+  50% {
+    transform: scale(1.4) translateY(-10px) rotate(5deg); /* bigger */
+  }
+  75% {
+    transform: scale(1.2) translateY(-5px) rotate(-5deg);
+  }
+  100% {
+    transform: scale(1) translateY(0) rotate(0deg);
+  }
+}
+
+.final-text {
     font-size: 22px;
     line-height: 1.4;
     text-align: center;
@@ -136,4 +186,7 @@ display: inline-block;
     padding: 10px 20px;
     background-color: rgba(255,240,240,0.5);
     border-radius: 12px;
+
+    margin-top: -20px; /* pulls it up */
 }
+
