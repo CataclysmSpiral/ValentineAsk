@@ -62,15 +62,15 @@ envelope.addEventListener("click", () => {
  });
 
 // YES is clicked
-
 yesBtn.addEventListener("click", () => {
     title.textContent = "Yippeeee!";
+    title.classList.add("yippee"); // animate text
 
     catImg.src = "cat_dance.gif";
+    catImg.classList.add("dance"); // animate cat
 
     document.querySelector(".letter-window").classList.add("final");
 
     buttons.style.display = "none";
-
     finalText.style.display = "block";
 });
