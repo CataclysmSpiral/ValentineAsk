@@ -65,7 +65,7 @@ body {
 
 #letter-title {
     position: relative;
-    top: 65px; /* moves it 50px downward */
+    top: 60px; /* moves it 50px downward */
     text-align: center;
 }
 #letter-cat {
@@ -188,6 +188,6 @@ display: inline-block;
     background-color: rgba(255,240,240,0.5);
     border-radius: 12px;
 
-    margin-top: -20px; /* pulls it up */
+    margin-top: 20px; /* pulls it up */
 }
 
