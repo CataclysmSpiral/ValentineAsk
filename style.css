@@ -8,15 +8,20 @@ body {
     font-family: "Pixelify Sans", sans-serif;
 }
 
+
+
+
+
+
 /* Envelope Screen */
 #envelope-container {
     text-align: center;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 @keyframes pulse {
     0% {
-        transform:scale(1);
+        transform: scale(1);
     }
     50% {
         transform: scale(1.1);
@@ -26,11 +31,31 @@ body {
     }
 }
 
-#envelope{
+#envelope {
     width: 200px;
-    animation: pulse 1.5s infinite;
+    animation: pulse 1.5s infinite;  /* keep existing pulse */
     cursor: pointer;
+
+    /* permanent shadow */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+
+    border-radius: 10px;              /* optional: soft corners */
+    transition: box-shadow 0.3s ease; /* smooth effect if you add hover later */
 }
+
+#envelope:hover {
+    box-shadow: 0 0 15px rgb(194, 164, 234),           /* pink glow */
+                0 0 15px rgb(194, 164, 234),
+                0 0 15px rgb(194, 164, 234);
+}
+
+
+
+
+
+
+
+
 
 #letter-container{
     display: none;
@@ -102,6 +127,19 @@ p {
     width: 180px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* buttons */
 .buttons {
     display: flex;
@@ -116,7 +154,7 @@ p {
 }
 
 .btn {
-    width: 155px;
+    width: 96px;
     cursor: pointer;
     user-select: none;
 
@@ -124,7 +162,15 @@ p {
     border-radius: 12px;                 /* rounded corners */
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);  /* always “floating” */
     background-color: #ffffff;           /* light pink background */
-    transition: transform 0.2s ease;     /* optional small press effect */
+    transition: transform 0.2s ease, box-shadow 0.3s ease; /* added box-shadow transition */
+}
+
+/* Glow effect on hover */
+.btn:hover {
+    box-shadow: 0 0 8px rgb(194, 164, 234),    /* soft pink glow */
+                0 0 8px rgb(194, 164, 234),
+                0 0 8px rgb(194, 164, 234);
+    transform: translateY(-3px);  /* optional: small lift on hover */
 }
 
 .btn:active {
@@ -134,7 +180,7 @@ p {
 
 .yes-btn,
 .no-btn {
-    width: 155px;
+    width: 96px;
     height: auto;
     display: inline-block;
 }
@@ -152,6 +198,13 @@ p {
     transition: transform 0.15s ease;
     cursor: default;
 }
+
+
+
+
+
+
+
 /*for yippeee!*/
 /*for yippeee!*/
 
@@ -258,4 +311,3 @@ p {
 
     margin-top: 72px; /* pulls it up */
 }
-
