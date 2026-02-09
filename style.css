@@ -90,12 +90,12 @@ body {
 
 #letter-title {
     position: relative;
-    top: -34px; /* moves it 50px downward */
+    top: -40px; /* moves it 50px downward */
     text-align: center;
 }
 #letter-cat {
     position: relative;
-    top: -81px; /* moves cat down 20px */
+    top: -82px; /* moves cat down 20px */
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -146,7 +146,7 @@ p {
     justify-content: center;
     gap: 30px;
     position: relative;
-    top: -130px;
+    top: -125px;
 }
 
 .no-wrapper{
@@ -154,7 +154,7 @@ p {
 }
 
 .btn {
-    width: 96px;
+    width: 105px;
     cursor: pointer;
     user-select: none;
 
@@ -180,7 +180,7 @@ p {
 
 .yes-btn,
 .no-btn {
-    width: 96px;
+    width: 105px;
     height: auto;
     display: inline-block;
 }
